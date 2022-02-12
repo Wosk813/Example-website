@@ -1,0 +1,43 @@
+body
+    background: #E2E8EE
+    color: #55534D
+    margin: 0
+    display: flex
+    justify-content: center
+    font-family: 'Roboto', sans-serif
+    #webBody
+        width: 1300px
+        .header
+            width: 100%
+            height: 90px
+            background: #383636
+            color: #CACACA
+            mix-blend-mode: multiply
+            padding: 20px
+            box-sizing: border-box
+            display: flex
+            .logo
+                font-size: 45px
+                padding-right: 25px
+            .nav-butt
+                font-size: 25px
+                padding: 12.5px
+                box-sizing: border-box
+                height: 50px
+                position: relative
+            .current::before
+                content: ''
+                position: absolute
+                bottom: 3px
+                left: 8.75%
+                width: 82.5%
+                height: 3px
+                background: #62AF93
+        .image
+            background-image: url('img/background.jpg')
+            width: 100vw
+            height: 600px
+            background-size: cover
+            background-position-y: -320px
+            
+
