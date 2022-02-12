@@ -2,17 +2,40 @@ body
     background: #E2E8EE
     color: #55534D
     margin: 0
-    display: flex
-    justify-content: center
     font-family: 'Roboto', sans-serif
-    #webBody
-        width: 1300px
+.parallax
+    position: absolute
+    height: 100vh
+    width: 100vw
+    perspective: 1px
+    overflow-x: hidden
+    overflow-y: auto
+    z-index: 1
+    .paralax-layer
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+    .parallax-layer-back
+        transform: translateZ(-1px) scale(2) translateX(-10px) translateY(-69px)
+    .parallax-layer-base
+        transform: translateZ(0)
+.image
+    background-image: url('img/background.jpg')
+    width: 100vw
+    height: 690px
+    background-size: cover
+    background-position-y: -650px
+    .header-container
+        height: 90px
+        background: #383636
+        color: #CACACA
+        mix-blend-mode: multiply
+        display: flex
+        justify-content: center
         .header
-            width: 100%
-            height: 90px
-            background: #383636
-            color: #CACACA
-            mix-blend-mode: multiply
+            width: 1300px
             padding: 20px
             box-sizing: border-box
             display: flex
@@ -33,11 +56,72 @@ body
                 width: 82.5%
                 height: 3px
                 background: #62AF93
-        .image
-            background-image: url('img/background.jpg')
-            width: 100vw
-            height: 600px
-            background-size: cover
-            background-position-y: -320px
-            
+.container
+    display: flex
+    justify-content: center
+    background: #E2E8EE
+    padding-top: 100px
+    box-shadow: inset 0px 0px 100px 0px #5a5a5a;
+    #webBody
+        width: 1300px
+        .descriptions
+            display: flex
+            justify-content: space-evenly
+            padding-bottom: 100px
+            .description
+                width: 33%
+                .number
+                    font-size: 30px
+                    font-family: 'Roboto Slab', sans-serif
+                    position: relative
+                    padding-bottom: 8px
+                .number::before
+                    content: ''
+                    position: absolute
+                    bottom: 0px
+                    width: 120px
+                    height: 5px
+                    background: #42AC99
+                .title
+                    padding-top: 8px
+                    font-size: 30px
+                    font-weight: bold
+                .desc
+                    padding-top: 30px
+                    font-size: 20px
+                    font-weight: lighter
+        .mountain-page
+            height: 100vh
+            box-sizing: border-box
+            display: flex
+            justify-content: center
+            .left-side
+                width: 520px
+                position: relative
+                .description
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    .title
+                        font-size: 30px
+                        font-weight: bold
+                    .desc
+                        padding-top: 30px
+                        font-size: 20px
+                        font-weight: lighter
+            .right-side
+                width: 780px
+            .mountain
+                height: 100vh
+                display: flex
+                justify-content: center
+                position: relative
+                .mountain-image
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+
+
+
 
