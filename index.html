@@ -6,111 +6,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="https://kit.fontawesome.com/cb032bb41a.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/065af52397.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Bike trips</title>
 </head>
 
 <body>
+    <div class="cv">
+        <div class="left-side">
+            <div class="container">
+            <div class="me">
+            </div>
+                <div class="name">
+                    KRYSTIAN TOMCZYK
+                </div>
+                <div class="profession">
+                    JUNIOR FRONT DEVELOPER
+                </div>
+                <hr>
+                <div class="profile-block">
+                    <div class="block-title">
+                        PROFIL OSOBISTY
+                    </div>
+                    Jestem początkującym frontend developerem, póki co bez stażu w żadnej firmie. Stawiam na ciągłe szlifowanie swoich umiejętności.
+                </div>                
+                <div class="profile-block">
+                    <div class="block-title">
+                        UMIEJĘTNOŚCI I KOMPETENCJE
+                    </div>
+                    -Zmotywowany i zdyscyplinowany <br>
+                    -Znajomość języka angielskiego na poziomie konwersacyjnym <br>
+                    -Dobra znajmość HTML, CSS, JS, a także jQuery, Sass oraz w małym stopniu Vue <br> 
+                    -Umiem korzystać z Git'a, Github'a, Visual Studio Code, Gimp, w przeszłości korzystałem również z Adobe Photoshop.
+                </div>                
+                <div class="profile-block">
+                    <div class="block-title">
+                        DANE KONTAKTOWE
+                    </div>
+                    Tel. komórkowy<br>
+                    Email
+                </div>
+            </div>
+
+        </div>
+        <div class="right-side">
+            <div class="go-back">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="container">
+                <h1>WYKSZTAŁCENIE</h1>
+                <div class="profile-block">
+                    <div class="block-title">
+                        Zespół Szkół Zawodowych i Ogólnokształcących im. Kombatantów Ziemi Lubańskiej w Lubaniu
+                    </div>
+                    <div class="sub-title">
+                    Technik informatyk, ukończenie nauki w 2021
+                    </div>
+                    -Średnia ocen z przedmiotów zawodowych: 5.24 <br>
+                    -Otrzymanie stypendium naukowego w 2020 roku <br>
+                    -Posiadam tytuł technika <br>
+                </div>                 
+                <br> 
+                <div class="profile-block">
+                    <div class="block-title">
+                        Politechnika Wrocławska, filia w Jeleniej Górze
+                    </div>
+                    <div class="sub-title">Wydział informatyka i telekomunikacja</div>
+                    Aktualnie od października 2021 ksztalcę się na studiach dziennych, kierunek - informatyka techniczna
+                </div>  
+                <h1>ZAINTERESOWANIE I HOBBY</h1>
+                <div class="profile-block">
+                    Interesuje się przede wszystkim designem, a także szeroko pojętą estetyką. 
+                    Tworzenie aplikacji webowych sprawia mi mase frajdy, 
+                    a zwłaszcza prezentowanie ich reszcie świata.
+                    W wolnym czasię lubię wyjść na spacer, bądź pojeździć na rowerze.
+                    Z natury jestem pedantem, zawsze dbam o porządek na swoim stanowisku pracy.
+                    </div>  
+                <h1>HISTORIA ZATRUDNIENIA</h1>
+                <div class="profile-block">
+                    Płatne praktyki w ramach nauki szkolnej w dwóch firmach związanych z moim zawodem: <br>
+                    Komputerownia w Lubaniu 07.2018 - 07.2018 <br>
+                    LEO-NET w Lubaniu 01.2020 - 02.2020
+                </div> 
+            </div>
+        </div>
+    </div>
     <div class="parallax">
         <div class="parallax-layer-back">
-        <div class="image">
-            <div class="header-container">
-                <div class="header">
-                    <div class="logo">
-                        <i class="fas fa-adjust"></i>
-                    </div>
-                    <div class="nav-butt current">
-                        Home
-                    </div>
-                    <div class="nav-butt">
-                        Services
-                    </div>
-                    <div class="nav-butt">
-                        Contact
-                    </div>
-                    <div class="nav-butt">
-                        FAQ
+            <div class="image">
+                <div class="header-container">
+                    <div class="header">
+                        <div class="logo">
+                            <i class="fa-solid fa-person-biking"></i>
+                        </div>
+                        <div class="nav-butt current">
+                            Home
+                        </div>
+                        <div class="nav-butt">
+                            Services
+                        </div>
+                        <div class="nav-butt">
+                            Contact
+                        </div>
+                        <div class="nav-butt">
+                            FAQ
+                        </div>
+                        <div class="nav-butt profile">
+                            <i class="fa-regular fa-id-card"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
         <div class="parallax-layer-base">
-        <div class="container">
             <div id="webBody">
-                <section class="descriptions">
-                    <div class="description">
-                        <div class="number">
-                            01.
+                <div class="container">
+                    <section class="descriptions">
+                        <div class="description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
+                            <div class="number">
+                                01.
+                            </div>
+                            <div class="title">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit
+                            </div>
+                            <div class="desc">
+                                Pellentesque sit amet ante imperdiet, sodales sem in, lobortis massa.
+                                Fusce id elit vehicula dolor sagittis ultricies vitae ac erat.
+                                Maecenas gravida sed lorem quis eleifend
+                            </div>
                         </div>
-                        <div class="title">
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit
+                        <div class="description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">
+                            <div class="number">
+                                02.
+                            </div>
+                            <div class="title">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit
+                            </div>
+                            <div class="desc">
+                                Pellentesque sit amet ante imperdiet, sodales sem in, lobortis massa.
+                                Fusce id elit vehicula dolor sagittis ultricies vitae ac erat.
+                                Maecenas gravida sed lorem quis eleifend
+                            </div>
                         </div>
-                        <div class="desc">
-                            Pellentesque sit amet ante imperdiet, sodales sem in, lobortis massa.
-                            Fusce id elit vehicula dolor sagittis ultricies vitae ac erat.
-                            Maecenas gravida sed lorem quis eleifend
+                        <div class="description" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500">
+                            <div class="number">
+                                03.
+                            </div>
+                            <div class="title">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit
+                            </div>
+                            <div class="desc">
+                                Pellentesque sit amet ante imperdiet, sodales sem in, lobortis massa.
+                                Fusce id elit vehicula dolor sagittis ultricies vitae ac erat.
+                                Maecenas gravida sed lorem quis eleifend
+                            </div>
                         </div>
-                    </div>
-                    <div class="description">
-                        <div class="number">
-                            02.
+                    </section>
+                    <section class="mountain-page">
+                        <div class="left-side">
+                            <div class="description">
+                                <div class="title">
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit
+                                </div>
+                                <div class="desc">
+                                    Donec fringilla elementum massa, a hendrerit arcu tincidunt ut. Nunc sapien lorem,
+                                    porttitor vitae lorem in, eleifend efficitur nibh. Quisque vehicula, purus sodales
+                                    placerat mattis, sapien turpis convallis nulla, in accumsan eros dui ac magna. Nunc
+                                    porta dolor vel lacus iaculis imperdiet. Nulla interdum condimentum dapibus. Duis
+                                    elementum turpis nec interdum fringilla. Duis sem ligula, tempus vitae erat eu,
+                                    semper dictum arcu.
+                                </div>
+                            </div>
                         </div>
-                        <div class="title">
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit
+                        <div class="right-side">
+                            <div class="mountain">
+                                <div class="mountain-image">
+                                    <div id="upper-arrow">
+                                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        </div>
+                                        <div class="mountain-arrow-right-line"></div>
+                                        <div class="mountain-arrow-left-line"></div>
+                                        <div class="mountain-arrow-dot"></div>
+                                    </div>
+                                    <div id="bottom-arrow">
+                                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Donec fringilla elementum massa, a hendrerit arcu tincidunt ut. Nunc
+                                            sapien lorem, porttitor vitae lorem in, eleifend efficitur nibh.</div>
+                                        <div class="mountain-arrow-right-line"></div>
+                                        <div class="mountain-arrow-left-line"></div>
+                                        <div class="mountain-arrow-dot"></div>
+                                    </div>
+                                    <img src="css\img\mountain.png" alt="File not found">
+                                </div>
+                            </div>
                         </div>
-                        <div class="desc">
-                            Pellentesque sit amet ante imperdiet, sodales sem in, lobortis massa.
-                            Fusce id elit vehicula dolor sagittis ultricies vitae ac erat.
-                            Maecenas gravida sed lorem quis eleifend
+                    </section>
+                    <section class="gallery-page">
+                        <div class="left-side">
+
                         </div>
-                    </div>
-                    <div class="description">
-                        <div class="number">
-                            03.
+                        <div class="right-side">
+
                         </div>
-                        <div class="title">
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit
-                        </div>
-                        <div class="desc">
-                            Pellentesque sit amet ante imperdiet, sodales sem in, lobortis massa.
-                            Fusce id elit vehicula dolor sagittis ultricies vitae ac erat.
-                            Maecenas gravida sed lorem quis eleifend
-                        </div>
-                    </div>
-                </section>
-                <section class="mountain-page">
-                    <div class="left-side">
-                    <div class="description">
-                        <div class="title">
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit
-                        </div>
-                        <div class="desc">
-                            Donec fringilla elementum massa, a hendrerit arcu tincidunt ut. Nunc sapien lorem, porttitor vitae lorem in, eleifend efficitur nibh. Quisque vehicula, purus sodales placerat mattis, sapien turpis convallis nulla, in accumsan eros dui ac magna. Nunc porta dolor vel lacus iaculis imperdiet. Nulla interdum condimentum dapibus. Duis elementum turpis nec interdum fringilla. Duis sem ligula, tempus vitae erat eu, semper dictum arcu.
-                        </div>
-                    </div>
-                    </div>
-                    <div class="right-side">
-                    <div class="mountain">
-                        <div class="mountain-image">
-                            <img src="css\img\mountain.png" alt="File not found">
-                        </div>
-                    </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
