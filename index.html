@@ -12,11 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="css/img/icon.png" type="image/x-icon">
     <title>Bike trips</title>
 </head>
 
 <body>
-    <div class="cv">
+    <div class="cv" id="cv">
         <div class="left-side">
             <div class="container">
             <div class="me">
@@ -38,10 +39,10 @@
                     <div class="block-title">
                         UMIEJĘTNOŚCI I KOMPETENCJE
                     </div>
+                    -Dobra znajmość HTML, CSS, JS, a także jQuery, Sass oraz w małym stopniu Vue <br> 
+                    -Umiem korzystać z Git'a, Github'a, Visual Studio Code, Gimp, w przeszłości korzystałem również z Adobe Photoshop. <br>
                     -Zmotywowany i zdyscyplinowany <br>
                     -Znajomość języka angielskiego na poziomie konwersacyjnym <br>
-                    -Dobra znajmość HTML, CSS, JS, a także jQuery, Sass oraz w małym stopniu Vue <br> 
-                    -Umiem korzystać z Git'a, Github'a, Visual Studio Code, Gimp, w przeszłości korzystałem również z Adobe Photoshop.
                 </div>                
                 <div class="profile-block">
                     <div class="block-title">
@@ -54,7 +55,7 @@
 
         </div>
         <div class="right-side">
-            <div class="go-back">
+            <div class="go-back" id="goBack">
                 <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="container">
@@ -115,7 +116,7 @@
                         <div class="nav-butt">
                             FAQ
                         </div>
-                        <div class="nav-butt profile">
+                        <div class="nav-butt profile" id="cvButt">
                             <i class="fa-regular fa-id-card"></i>
                         </div>
                     </div>
@@ -211,12 +212,31 @@
                     </section>
                     <section class="gallery-page">
                         <div class="left-side">
-
+                            <div class="gallery-container">
+                                <img id="first" src="css/img/1.jpg" alt="1">
+                                <img id="secound" src="css/img/2.jpg" alt="2">
+                                <img id="thrid" src="css/img/3.jpg" alt="3">
+                            </div>
                         </div>
                         <div class="right-side">
-
+                            <div class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Donec fringilla elementum massa, a hendrerit arcu tincidunt ut. 
+                                    Nunc sapien lorem, porttitor vitae lorem in, eleifend efficitur 
+                                    nibh. Quisque vehicula, purus sodales placerat mattis, 
+                                    sapien turpis convallis nulla, in accumsan eros dui ac 
+                                    magna. Nunc porta dolor vel lacus iaculis imperdiet. 
+                                    Nulla interdum condimentum dapibus. Duis elementum turpis 
+                                    nec interdum fringilla. Duis sem ligula, tempus vitae 
+                                    erat eu, semper dictum arcu.
+                            </div>
                         </div>
                     </section>
+                    <section class="mountain-climbing">
+                    </section>
+                    <!--<section class="footer">
+                        
+                    </section>-->
                 </div>
             </div>
         </div>
