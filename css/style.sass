@@ -5,10 +5,10 @@ body
     font-family: 'Roboto', sans-serif
     overflow-x: hidden
 ::-moz-selection 
-    background: #b3b3b3
+    background: #777777
     color: #E2E8EE
 ::selection
-    background: #b3b3b3
+    background: #777777
     color: #E2E8EE
 .cv
     position: absolute
@@ -109,7 +109,7 @@ body
         transform: translateZ(-1px) scale(2) translateX(-10px) translateY(-69px)
     .parallax-layer-base
         transform: translateZ(0)
-.image
+.main-image
     background-image: url('img/background.jpg')
     width: 100vw
     height: 690px
@@ -153,14 +153,16 @@ body
                 right: 20px
                 top: 5px
                 font-size: 50px
-#webBody
+.webBody
     display: flex
-    justify-content: center
     background: #E2E8EE
     padding-top: 100px
-    box-shadow: inset 0px 0px 100px 0px #5a5a5a;
+    box-shadow: inset 0px 0px 100px 0px #5a5a5a
+    flex-direction: column
     .container
         width: 1300px
+        margin-left: auto
+        margin-right: auto
         .descriptions
             display: flex
             justify-content: space-evenly
@@ -187,7 +189,7 @@ body
                     padding-top: 30px
                     font-size: 20px
                     font-weight: lighter
-        .mountain-page, .gallery-page
+        .mountain-page
             height: 100vh
             box-sizing: border-box
             display: flex
@@ -266,8 +268,12 @@ body
                         left: 91px
                         width: 192px
         .gallery-page
+            height: 100vh
+            box-sizing: border-box
+            display: flex
+            justify-content: center
             .left-side
-                width: 780px
+                width: 700px
                 position: relative
                 .gallery-container
                     border: 1px solid black
@@ -283,21 +289,21 @@ body
                     box-shadow: 33px 32px 51px -14px #0000006e
                 #first
                     top: -220px
-                    left: -100px
-                    width: 432px
+                    left: -220px
+                    width: 530px
                     z-index: 1
                 #secound
-                    top: 25px
-                    left: -107px
-                    width: 384px
+                    top: 56px
+                    left: -157px
+                    width: 420px
                     z-index: 2
                 #thrid
-                    top: -140px
-                    left: -240px
-                    width: 250px
+                    top: -145px
+                    left: -316px
+                    width: 288px
                     z-index: 3
             .right-side
-                width: 520px
+                width: 600px
                 position: relative
                 .description
                     font-size: 20px 
@@ -306,9 +312,82 @@ body
                     top: 50%
                     transform: translateY(-50%)
                     color: #55534D
-        .mountain-climbing
-            height: 100vh
-.footer
+.mountain-climbing
+    @keyframes climbing 
+        form
+            transform: translateX(0%) translatey(0%)
+        to
+            transform: translateX(-100%) translateY(-33.5%)
+    height: 100vh
+    position: relative
     width: 100%
-    height: 50px
+    //box-shadow: inset 0px 0px 24px 20px #E2E8EE
+    .mountain-box-shadow
+        height: 879px
+        width: 1184px
+        box-shadow: inset 0px 0px 35px 30px #E2E8EE, 0px 0px 1em #E2E8EE
+        position: absolute
+        z-index: 5
+        left: 60px
+    .description
+        bottom: 225px
+        left: 220px
+        width: 350px
+        position: absolute
+        z-index: 5
+        font-size: 20px
+        font-weight: lighter
+        .title
+            font-size: 20px
+            font-weight: bold
+    .bike
+        animation: climbing linear infinite
+    #first
+        animation-duration: 10s
+        animation-delay: 1s
+    #secound
+        animation-duration: 8s
+        animation-delay: 2s
+    #thrid
+        animation-duration: 11s
+    #fourth
+        animation-duration: 10s
+        animation-delay: 3s
+    #fifth
+        animation-duration: 13s
+    #sixth
+        animation-duration: 12s
+        animation-delay: 3s
+    svg
+        position: absolute
+        left: 60px
+.footer-container
+    position: fixed
+    width: 100%
+    height: 70px
+    display: flex
+    justify-content: center
     background: url('img/footer.jpg')
+    bottom: 0
+    background-size: cover
+    background-position-y: -500px
+    .footer
+        width: 1300px
+        padding: 10px
+        box-sizing: border-box
+        display: flex
+        position: absolute   
+        color: #CACACA
+        font-weight: lighter
+        .logo
+            font-size: 40px
+            padding-right: 30px
+        .footer-butt
+            font-size: 25px
+            padding: 10px
+            padding-left: 25px
+            padding-right: 25px
+            box-sizing: border-box
+        .footer-butt:hover, .logo:hover
+            cursor: pointer
+            color: white
