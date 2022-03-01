@@ -12,15 +12,16 @@ body
     color: #E2E8EE
 .cv
     position: absolute
-    top: 0
-    right: 0
-    width: 900px
+    top: 0px
+    right: -1000px
+    width: 1000px
     height: 100vh
     z-index: 10
-    display: none
     justify-content: center
+    display: flex
+    transition: right 0.5s
     .left-side
-        width: 350px
+        width: 35%
         background: #2D414A
         display: flex
         justify-content: flex-start
@@ -28,7 +29,7 @@ body
         box-sizing: border-box
         flex-direction: column
         .container
-            width: 250px
+            width: 100%
             color: #FAFAFA
             .me
                 border-radius: 50%
@@ -58,7 +59,7 @@ body
                 height: 2px
                 background: #CACACA
     .right-side
-        width: 650px
+        width: 65%
         background: #E2E8EE
         display: flex
         justify-content: flex-start
@@ -67,13 +68,13 @@ body
         flex-direction: column
         position: relative
         .container
-            width: 500px
+            width: 100%
             color: #2D414A
             h1
                 background: #FFECD6
                 padding: 5px
             .profile-block
-                width: 400px
+                width: 90%
                 font-size: 15px
                 .block-title
                     font-size: 27.5px
