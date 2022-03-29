@@ -112,13 +112,14 @@ body
     .parallax-layer-base
         transform: translateZ(0)
         */
-.main-image
+.header-container
     background-image: url('img/background.jpg')
+    background-attachment: fixed
     width: 100vw
     height: 690px
     background-size: cover
     background-position-y: -650px
-    .header-container
+    .header-image
         height: 90px
         background: #383636
         color: #CACACA
@@ -232,10 +233,11 @@ body
                     position: absolute
                     background: #42AC99
                     height: 6px
-                .description
+                .arrow-description
                     position: absolute
                     font-size: 16px
                 #upper-arrow
+                    z-index: 10
                     .mountain-arrow-dot
                         left: 295px
                         top: 147px
@@ -248,11 +250,12 @@ body
                         top: 127px
                         left: 82px
                         width: 120px
-                    .description
+                    .arrow-description
                         top: 47px
                         left: 82px
                         width: 102px
                 #bottom-arrow
+                    z-index: 10
                     .mountain-arrow-dot
                         left: 340px
                         top: 500px
@@ -265,7 +268,7 @@ body
                         top: 561px
                         left: 91px
                         width: 166px
-                    .description
+                    .arrow-description
                         top: 570px
                         left: 91px
                         width: 192px
@@ -332,13 +335,13 @@ body
             .description
                 bottom: 225px
                 left: 220px
-                width: 350px
+                width: 450px
                 position: absolute
                 z-index: 5
-                font-size: 20px
+                font-size: 25px
                 font-weight: lighter
                 .title
-                    font-size: 20px
+                    font-size: 28px
                     font-weight: bold
             .bike
                 animation: climbing linear infinite
