@@ -7,9 +7,11 @@ cvButton.addEventListener("click", showCV)
 cvBackButton.addEventListener("click", hideCV)
 function showCV(){
     cv.style.transform = 'translateX(0)';
-    body.style.filter = 'brightness(50%)';
+    //cv.style.display = 'flex';
+    //body.style.filter = 'brightness(50%)';
 }
 function hideCV(){
     cv.style.transform = 'translateX(100%)';
-    body.style.filter = 'brightness(100%)';
+    //cv.style.display = 'none';
+    //body.style.filter = 'brightness(100%)';
 }
