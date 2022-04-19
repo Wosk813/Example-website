@@ -1,5 +1,5 @@
 body
-    background: #E2E8EE
+    background: #141414
     color: #55534D
     margin: 0
     font-family: 'Roboto', sans-serif
@@ -12,16 +12,14 @@ body
     color: #E2E8EE
 .cv
     position: absolute
-    top: 0px
-    right: 0px
     width: 1000px
     height: 100vh
     z-index: 10
     justify-content: center
+    transition: opacity 0.8s
     display: flex
-    transition: transform 0.5s
-    transform: translateX(100%)
-    display: none
+    left: 50%
+    transform: translateX(-50%)
     .left-side
         width: 35%
         background: #2D414A
@@ -56,9 +54,9 @@ body
                     font-size: 25px
                     font-weight: bold
                     color: #D1ECFC
-                    padding: 20px 0px 20px 0px
+                    padding: 15px 0px 15px 0px
             hr
-                height: 2px
+                height: 1.5px
                 background: #CACACA
     .right-side
         width: 65%
@@ -94,25 +92,16 @@ body
         .go-back:hover
             transform: scale(1.3)
             cursor: pointer
-/*.parallax
-    position: absolute
-    height: 100vh
-    width: 100vw
-    perspective: 1px
-    overflow-x: hidden
-    overflow-y: auto
-    z-index: 1
-    .paralax-layer
-        position: absolute
-        top: 0
-        right: 0
-        bottom: 0
-        left: 0
-    .parallax-layer-back
-        transform: translateZ(-1px) scale(2) translateX(-10px) translateY(-69px)
-    .parallax-layer-base
-        transform: translateZ(0)
-        */
+.show
+    opacity: 1
+.hide
+    opacity: 0
+    pointer-events: none
+.background
+    filter: blur(15px)
+    opacity: 0.7
+#background
+    transition: all 0.3s
 .header-container
     background-image: url('img/background.jpg')
     background-attachment: fixed
